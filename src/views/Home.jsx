@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <>
-      <h1>Lucie's Generative Art Project</h1>
-      <h3>Project Description:</h3>
+    <div className='homeContainer'>
+      <h1 className='homeTitle'>Hidden Camera</h1>
+      <h4 className='homeTitle'> The best camera you've never seen!</h4>
+      <p>Project Description:</p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Urna id volutpat
@@ -20,7 +21,7 @@ const Home = () => {
         eu sem integer vitae. Pharetra diam sit amet nisl. Purus faucibus ornare
         suspendisse sed nisi.
       </p>
-      <span>
+      <span className='homeButtonContainer'>
         <Link to='/generate'>
           <button type='button'>Generate</button>
         </Link>
@@ -28,7 +29,14 @@ const Home = () => {
           <button type='button'>Gallery</button>
         </Link>
       </span>
-    </>
+      <div className='acknowledgements'>
+        <p style={{ textAlign: "center" }}>
+          Abraham Huerta - https://twitter.com/abe_huerta <br /> Stephen Alberts
+          - http://stephenalberts.art/ <br /> The Coding Train -
+          https://thecodingtrain.com/{" "}
+        </p>
+      </div>
+    </div>
   );
 };
 

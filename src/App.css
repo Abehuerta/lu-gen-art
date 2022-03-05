@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Global Styling */
+body {
+  background-color: black;
+  font-family: "Inter";
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background-color: black;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-size: large;
+}
+
+/* Custom Globals */
+
+/* Navbar */
+
+.navContainer {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+
+.navItem {
+  color: white;
+  padding: 10px;
+}
+
+/* Homepage styling */
+
+.homeContainer {
+  width: 66%;
+  margin: auto;
+}
+
+.homeTitle {
+  text-align: center;
+}
+
+.homeButtonContainer {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 66%;
+  justify-content: space-around;
+  padding-top: 5rem;
+}
+
+.acknowledgements {
+  margin: auto;
+  margin-top: 5rem;
+  width: 50%;
+  border: solid 1px white;
 }
