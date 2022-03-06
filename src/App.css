@@ -1,4 +1,11 @@
 /* Global Styling */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: black;
   font-family: "Inter";
@@ -11,7 +18,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: white;
+  color: inherit;
 }
 
 button {
@@ -22,8 +29,6 @@ button {
   padding: 10px;
   font-size: large;
 }
-
-/* Custom Globals */
 
 /* Navbar */
 
@@ -42,8 +47,13 @@ button {
 }
 
 .navItem {
-  color: white;
   padding: 10px;
+}
+
+.disabledLink {
+  color: slategray;
+  padding: 10px;
+  pointer-events: none;
 }
 
 /* Homepage styling */
@@ -71,4 +81,71 @@ button {
   margin-top: 5rem;
   width: 50%;
   border: solid 1px white;
+}
+
+/* Playground styling */
+
+.submitButton {
+  background-color: black;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-size: large;
+}
+
+select {
+  appearance: none;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+option {
+  background-color: black;
+  padding: 2px;
+  border-radius: 0.25em;
+}
+
+.select {
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid white;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: black;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+}
+
+.select::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: white;
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  justify-self: end;
+}
+
+select,
+.select:after {
+  grid-area: select;
 }

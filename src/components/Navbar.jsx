@@ -8,11 +8,14 @@ const Navbar = () => {
         <li className='navItem'>
           <Link to={"/"}>Home</Link>
         </li>
-        <li className='navItem'>
+        <li className='disabledLink'>
           <Link to={"/generate"}>Generate</Link>
         </li>
         <li className='navItem'>
           <Link to={"/gallery"}>Gallery</Link>
+        </li>
+        <li className='navItem'>
+          <Link to={"/playground"}>Playground</Link>
         </li>
       </ul>
       <ul className='navbar'>
