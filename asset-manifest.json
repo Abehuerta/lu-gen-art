@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/lu-gen-art/static/css/main.9183033b.css",
+    "main.js": "/lu-gen-art/static/js/main.bf5f9100.js",
+    "static/js/787.c2d67c27.chunk.js": "/lu-gen-art/static/js/787.c2d67c27.chunk.js",
+    "static/media/inter-all-400-normal.woff": "/lu-gen-art/static/media/inter-all-400-normal.e71ac35377dd87cb4d4b.woff",
+    "static/media/inter-latin-ext-400-normal.woff2": "/lu-gen-art/static/media/inter-latin-ext-400-normal.0acc5fd627837a66a54c.woff2",
+    "static/media/inter-latin-400-normal.woff2": "/lu-gen-art/static/media/inter-latin-400-normal.5e6a773da9d1377fc690.woff2",
+    "static/media/inter-cyrillic-ext-400-normal.woff2": "/lu-gen-art/static/media/inter-cyrillic-ext-400-normal.18c349d70f5019a6d29b.woff2",
+    "static/media/inter-greek-400-normal.woff2": "/lu-gen-art/static/media/inter-greek-400-normal.f9ed81eb6c1d26e7a6ec.woff2",
+    "static/media/inter-cyrillic-400-normal.woff2": "/lu-gen-art/static/media/inter-cyrillic-400-normal.b20b645d542bcc27ebe9.woff2",
+    "static/media/inter-greek-ext-400-normal.woff2": "/lu-gen-art/static/media/inter-greek-ext-400-normal.b0ec0b8d1c8c5aac1917.woff2",
+    "static/media/inter-vietnamese-400-normal.woff2": "/lu-gen-art/static/media/inter-vietnamese-400-normal.fac160b02ecb5416d760.woff2",
+    "index.html": "/lu-gen-art/index.html",
+    "main.9183033b.css.map": "/lu-gen-art/static/css/main.9183033b.css.map",
+    "main.bf5f9100.js.map": "/lu-gen-art/static/js/main.bf5f9100.js.map",
+    "787.c2d67c27.chunk.js.map": "/lu-gen-art/static/js/787.c2d67c27.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9183033b.css",
+    "static/js/main.bf5f9100.js"
+  ]
+}
