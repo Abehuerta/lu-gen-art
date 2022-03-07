@@ -149,3 +149,138 @@ select,
 .select:after {
   grid-area: select;
 }
+
+/* Generate Page Style */
+
+input[type="radio"] {
+  appearance: none;
+  background-color: black;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1em;
+  height: 1em;
+  border: 0.05em solid White;
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]:checked {
+  background-color: white;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  background-color: white;
+  visibility: hidden;
+}
+
+input[type="radio"]:checked:before {
+  visibility: visible;
+}
+
+.subject-control {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  border: 0.05em solid white;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+.subject-control:hover {
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.prompt {
+  font-size: large;
+  margin-bottom: 50px;
+}
+
+/* Generate Page Checkbox styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border: 0.05em solid white;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggler {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.toggler:before {
+  position: absolute;
+  content: "";
+  height: 1em;
+  width: 1em;
+  left: 0.25em;
+  top: 0.2em;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input[type="checkbox"]:checked + .toggler {
+  background-color: white;
+}
+
+input[type="checkbox"]:checked + .toggler:before {
+  background-color: black;
+  -webkit-transform: translateX(1.5em);
+  -ms-transform: translateX(1.5em);
+  transform: translateX(1.5em);
+}
+
+/* Generate Page Slider input */
+.sliderContainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 10px;
+  background-color: black;
+  border: 0.1em solid white;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 25px;
+  background: white;
+  cursor: pointer;
+  border: 4px solid white;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: white;
+  cursor: pointer;
+}

@@ -3,6 +3,7 @@ import cornMaze from "../p5/cornMaze";
 import droplets from "../p5/droplets";
 import cityscape from "../p5/cityscape";
 import feather from "../p5/feather";
+import thread from "../p5/thread";
 
 const Playground = () => {
   const [canvas, setCanvas] = useState(null);
@@ -33,6 +34,9 @@ const Playground = () => {
       case "feather":
         setCanvas(new window.p5(feather, "sketchContainer"));
         break;
+      case "thread":
+        setCanvas(new window.p5(thread, "sketchContainer"));
+        break;
       default:
         break;
     }
@@ -40,6 +44,7 @@ const Playground = () => {
 
   return (
     <>
+      <h1 style={{ textAlign: "center" }}>Playground</h1>
       <div
         id='sketchContainer'
         style={{
@@ -61,6 +66,7 @@ const Playground = () => {
               <option value='droplets'>Droplets</option>
               <option value='cityscape'>Cityscape</option>
               <option value='feather'>Feather</option>
+              <option value='thread'>Thread</option>
             </select>
           </div>
           <br />
