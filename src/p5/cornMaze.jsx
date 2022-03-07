@@ -1,3 +1,5 @@
+import * as lib from "./lib";
+
 export default function (s) {
   let x = 0;
   let y = 0;
@@ -15,15 +17,7 @@ export default function (s) {
     s.createCanvas(400, 400);
     s.background(0);
 
-    r = s.random(140, 255);
-    g = s.random(140, 255);
-    while (s.abs(r - g) < 30) {
-      g = s.random(140, 255);
-    }
-    b = s.random(140, 255);
-    while (s.abs(r - b) < 30 && s.abs(g - b) < 30) {
-      b = s.random(140, 255);
-    }
+    [r, g, b] = lib.vibrantColors(s);
   };
 
   function row() {

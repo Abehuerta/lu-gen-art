@@ -6,7 +6,7 @@ import feather from "../p5/feather";
 
 const Playground = () => {
   const [canvas, setCanvas] = useState(null);
-  const [sketch, setSketch] = useState("");
+  const [sketch, setSketch] = useState("cornMaze");
 
   const handleChange = (event) => {
     event.preventDefault();
@@ -46,11 +46,11 @@ const Playground = () => {
           width: "100%",
           height: "400px",
           textAlign: "center",
-          marginTop: "100px",
+          marginTop: "50px",
         }}
       />
 
-      <div style={{ width: "100%", textAlign: "center", marginTop: "20px" }}>
+      <div style={{ width: "100%", textAlign: "center", marginTop: "75px" }}>
         <form onSubmit={handleSubmit}>
           <div className='select' style={{ textAlign: "center" }}>
             <select

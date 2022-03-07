@@ -1,3 +1,5 @@
+import * as lib from "./lib";
+
 export default function (s) {
   var circlesno = [];
 
@@ -5,17 +7,11 @@ export default function (s) {
   let g = 255;
   let b = 255;
 
-  function randomColor() {
-    r = s.random(0, 255);
-    g = s.random(0, 255);
-    b = s.random(0, 255);
-  }
-
   s.setup = function () {
     s.createCanvas(400, 400);
     s.background(0);
 
-    randomColor();
+    [r, g, b] = lib.randomColors(s);
 
     var protection = 0;
 
