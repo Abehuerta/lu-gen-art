@@ -13,9 +13,7 @@ const Gallery = () => {
   useEffect(() => {
     async function fetchGallery() {
       const response = await supabase.from("gallery").select("*");
-      console.log(response.data);
       setGallery(response.data);
-      console.log(gallery[0].piece_name);
     }
     fetchGallery();
   }, [setGallery]);
