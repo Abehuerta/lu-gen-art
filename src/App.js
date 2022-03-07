@@ -9,16 +9,14 @@ import Playground from "./views/Playground";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path='generate' element={<Generate />} />
-          <Route path='gallery' element={<Gallery />} />
-          <Route path='playground' element={<Playground />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path='generate' element={<Generate />} />
+        <Route path='gallery' element={<Gallery />} />
+        <Route path='playground' element={<Playground />} />
+      </Route>
+    </Routes>
   );
 }
 
