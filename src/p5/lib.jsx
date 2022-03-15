@@ -23,3 +23,13 @@ export function vibrantColors(s) {
 
   return [r, g, b];
 }
+
+export function blackAndWhite(s) {
+  let color = s.random(0, 255);
+
+  let r = color;
+  let g = color;
+  let b = color;
+
+  return [r, g, b];
+}

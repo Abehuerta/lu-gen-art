@@ -11,8 +11,8 @@ export default function (s) {
 
   var mult;
 
-  s.setup = function () {
-    s.createCanvas(400, 400);
+  s.setup = () => {
+    s.createCanvas(400, 400, s.WEBGL);
     s.background(0);
     s.angleMode(s.DEGREES);
     s.noiseDetail(1);

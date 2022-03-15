@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { createClient } from "@supabase/supabase-js";
 import ArtPiece from "../components/ArtPiece";
-
-const API_KEY = process.env.REACT_APP_SUPABASE_KEY;
-const SUPABASE_URL = "https://ciidzvjthrewaklaiiww.supabase.co";
-
-const supabase = createClient(SUPABASE_URL, API_KEY);
+import { supabase } from "../supbaseClient";
 
 const Gallery = () => {
   const [gallery, setGallery] = useState(null);
