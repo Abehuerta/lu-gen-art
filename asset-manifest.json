@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lu-gen-art/static/css/main.9183033b.css",
-    "main.js": "/lu-gen-art/static/js/main.1a693e38.js",
+    "main.css": "/lu-gen-art/static/css/main.3d585daa.css",
+    "main.js": "/lu-gen-art/static/js/main.636308a0.js",
     "static/js/787.c2d67c27.chunk.js": "/lu-gen-art/static/js/787.c2d67c27.chunk.js",
     "static/media/inter-all-400-normal.woff": "/lu-gen-art/static/media/inter-all-400-normal.e71ac35377dd87cb4d4b.woff",
     "static/media/inter-latin-ext-400-normal.woff2": "/lu-gen-art/static/media/inter-latin-ext-400-normal.0acc5fd627837a66a54c.woff2",
@@ -12,12 +12,12 @@
     "static/media/inter-greek-ext-400-normal.woff2": "/lu-gen-art/static/media/inter-greek-ext-400-normal.b0ec0b8d1c8c5aac1917.woff2",
     "static/media/inter-vietnamese-400-normal.woff2": "/lu-gen-art/static/media/inter-vietnamese-400-normal.fac160b02ecb5416d760.woff2",
     "index.html": "/lu-gen-art/index.html",
-    "main.9183033b.css.map": "/lu-gen-art/static/css/main.9183033b.css.map",
-    "main.1a693e38.js.map": "/lu-gen-art/static/js/main.1a693e38.js.map",
+    "main.3d585daa.css.map": "/lu-gen-art/static/css/main.3d585daa.css.map",
+    "main.636308a0.js.map": "/lu-gen-art/static/js/main.636308a0.js.map",
     "787.c2d67c27.chunk.js.map": "/lu-gen-art/static/js/787.c2d67c27.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9183033b.css",
-    "static/js/main.1a693e38.js"
+    "static/css/main.3d585daa.css",
+    "static/js/main.636308a0.js"
   ]
 }
