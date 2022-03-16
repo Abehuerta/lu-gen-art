@@ -56,21 +56,12 @@ const Generate = () => {
   return (
     <>
       <h1 style={{ textAlign: "center" }}>Generate</h1>
-      <p style={{ width: "30em", textAlign: "center", margin: "auto" }}>
+      <p style={{ maxWidth: "30em", textAlign: "center", margin: "auto" }}>
         There is a hidden camera inside this computer. Direct it to take a photo
         and edit the photo. After you make your selections, the computer will
         develop the photo for you!
       </p>
-      <div
-        style={{
-          paddingTop: "50px",
-          width: "66%",
-          margin: "auto",
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-around",
-          verticalAlign: "center",
-        }}>
+      <div className='form-container'>
         <form
           style={{
             alignSelf: "center",

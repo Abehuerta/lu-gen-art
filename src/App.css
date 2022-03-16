@@ -59,7 +59,7 @@ button {
 /* Homepage styling */
 
 .homeContainer {
-  width: 66%;
+  max-width: 50em;
   margin: auto;
 }
 
@@ -71,7 +71,7 @@ button {
   display: flex;
   flex-direction: row;
   margin: auto;
-  width: 66%;
+  max-width: 50em;
   justify-content: space-around;
   padding-top: 5rem;
 }
@@ -79,7 +79,7 @@ button {
 .acknowledgements {
   margin: auto;
   margin-top: 5rem;
-  width: 50%;
+  max-width: 20em;
   border: solid 1px white;
 }
 
@@ -283,4 +283,66 @@ input[type="checkbox"]:checked + .toggler:before {
   height: 25px;
   background: white;
   cursor: pointer;
+}
+
+/* Generate Page */
+
+.form-container {
+  padding-top: 50px;
+  width: 66%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Gallery page */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 70em;
+  margin: auto;
+}
+
+.art-piece {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+@media (max-width: 896px) {
+  .form-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 896px) {
+  .piece-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .art-piece {
+    margin: auto;
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .piece-name {
+    text-align: center;
+    color: white;
+  }
+
+  .piece-artist {
+    text-align: center;
+    color: white;
+  }
 }

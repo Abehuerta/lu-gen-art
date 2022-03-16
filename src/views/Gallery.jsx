@@ -16,14 +16,7 @@ const Gallery = () => {
   return (
     <>
       <h1 style={{ textAlign: "center" }}>Gallery</h1>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          gridGap: 20,
-          width: "66%",
-          margin: "auto",
-        }}>
+      <div className='gallery'>
         {gallery ? (
           gallery.map((piece) => (
             <ArtPiece

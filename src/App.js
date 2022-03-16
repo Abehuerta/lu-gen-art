@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <main>
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route index path='/' element={<Home />} />
           <Route path='/generate' element={<Generate />} />
           <Route path='/publish' element={<Publish wyf="I'm tired" />} />
           <Route path='/gallery' element={<Gallery />} />

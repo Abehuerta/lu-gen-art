@@ -8,7 +8,7 @@ import { CanvasProvider } from "./canvasContext";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.REACT_APP_API_BASE_URL}>
       <CanvasProvider>
         <App />
       </CanvasProvider>
