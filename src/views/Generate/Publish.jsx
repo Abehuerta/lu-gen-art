@@ -3,6 +3,7 @@ import { createClient } from "@supabase/supabase-js";
 import { CanvasContext } from "../../canvasContext";
 import { supabase } from "../../supbaseClient";
 import { decode } from "base64-arraybuffer";
+import { useNavigate } from "react-router-dom";
 
 const STATUS = {
   IDLE: "IDLE",
@@ -22,6 +23,7 @@ const Publish = (props) => {
   const [piece, setPiece] = useState(emptyPiece);
   const [status, setStatus] = useState(STATUS.IDLE);
   const { dataURL } = useContext(CanvasContext);
+  const navigate = useNavigate();
 
   //derived state
   const errors = getErrors(piece);
@@ -90,6 +92,7 @@ const Publish = (props) => {
       try {
         const response = await supabase.from("gallery").insert(piece);
         console.log(response);
+        navigate("/gallery");
       } catch (err) {
         console.log(err);
       }

@@ -32,17 +32,6 @@ const Colors = (props) => {
           id='number'
           type='radio'
           name='Color Theme'
-          value='mono'
-          onChange={handleColorChange}
-          checked={props.colorTheme === "mono"}
-        />
-        Monochromatic
-      </label>
-      <label className='subject-control'>
-        <input
-          id='number'
-          type='radio'
-          name='Color Theme'
           value='pastel'
           onChange={handleColorChange}
           checked={props.colorTheme === "pastel"}
@@ -65,22 +54,22 @@ const Colors = (props) => {
           id='number'
           type='radio'
           name='Color Theme'
-          value='rainbow'
+          value='baw'
           onChange={handleColorChange}
-          checked={props.colorTheme === "rainbow"}
+          checked={props.colorTheme === "baw"}
         />
-        Rainbow
+        Black and white
       </label>
       <label className='subject-control'>
         <input
           id='number'
           type='radio'
           name='Color Theme'
-          value='baw'
+          value='random'
           onChange={handleColorChange}
-          checked={props.colorTheme === "baw"}
+          checked={props.colorTheme === "random"}
         />
-        Black and white
+        Random
       </label>
     </div>
   );

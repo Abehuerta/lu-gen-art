@@ -6,21 +6,6 @@ const Home = () => {
     <div className='homeContainer'>
       <h1 className='homeTitle'>Hidden Camera</h1>
       <h4 className='homeTitle'> The best camera you've never seen!</h4>
-      <p>Project Description:</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Urna id volutpat
-        lacus laoreet non curabitur gravida.{" "}
-      </p>{" "}
-      <p>
-        Ut aliquam purus sit amet luctus venenatis. Consequat mauris nunc congue
-        nisi vitae suscipit tellus mauris a. Dictum fusce ut placerat orci nulla
-        pellentesque. Lorem ipsum dolor sit amet consectetur adipiscing elit.
-        Scelerisque in dictum non consectetur a erat nam at. Quis auctor elit
-        sed vulputate mi sit amet mauris. Volutpat odio facilisis mauris sit. Ut
-        eu sem integer vitae. Pharetra diam sit amet nisl. Purus faucibus ornare
-        suspendisse sed nisi.
-      </p>
       <span className='homeButtonContainer'>
         <Link to='/generate'>
           <button type='button'>Generate</button>
@@ -29,6 +14,9 @@ const Home = () => {
           <button type='button'>Gallery</button>
         </Link>
       </span>
+      <h2 style={{ margin: "auto", textAlign: "center", marginTop: "5em" }}>
+        Acknowledgements
+      </h2>
       <div className='acknowledgements'>
         <p style={{ textAlign: "center" }}>
           Abraham Huerta - https://twitter.com/abe_huerta <br /> Stephen Alberts

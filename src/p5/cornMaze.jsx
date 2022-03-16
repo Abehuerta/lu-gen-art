@@ -14,7 +14,8 @@ export default function cornMazeSetup(flash, colorScheme) {
     let j = 10;
     let k = 10;
 
-    let bounds = 0;
+    let lowerBounds = 0;
+    let upperBounds = 255;
 
     s.setup = function () {
       s.createCanvas(400, 400);
@@ -27,20 +28,24 @@ export default function cornMazeSetup(flash, colorScheme) {
 
       switch (colorScheme) {
         case "mono":
-          [r, g, b] = lib.randomColors(s);
+          const colors = s.random(0, 255);
+
+          [r, g, b] = lib.monoColors(s, colors);
           break;
         case "pastel":
           [r, g, b] = lib.pastelColors(s);
-          bounds = 140;
+          lowerBounds = 140;
           break;
         case "vibrant":
           [r, g, b] = lib.vibrantColors(s);
           break;
-        case "rainbow":
+        case "random":
           [r, g, b] = lib.randomColors(s);
           break;
         case "baw":
           [r, g, b] = lib.blackAndWhite(s);
+          lowerBounds = 25;
+          upperBounds = 235;
           break;
         default:
           break;
@@ -66,20 +71,25 @@ export default function cornMazeSetup(flash, colorScheme) {
         x = 0;
         y = y + spacing;
 
-        //iterate RGB every new line
-        r += i;
-        g += j;
-        b += k;
+        if (colorScheme === "mono") {
+          r += i;
+          [r, g, b] = lib.monoColors(s, g);
+        } else {
+          //iterate RGB every new line
+          r += i;
+          g += j;
+          b += k;
 
-        if (r > 255 || r < bounds) {
-          //Bounding i, j, k between 0 -255
-          i *= -1;
-        }
-        if (g > 255 || g < bounds) {
-          j *= -1;
-        }
-        if (b > 255 || b < bounds) {
-          k *= -1;
+          if (r > upperBounds || r < lowerBounds) {
+            //Bounding i, j, k between 0 -255
+            i *= -1;
+          }
+          if (g > upperBounds || g < lowerBounds) {
+            j *= -1;
+          }
+          if (b > upperBounds || b < lowerBounds) {
+            k *= -1;
+          }
         }
       }
       if (y > s.height - 1) {
